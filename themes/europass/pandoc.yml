@@ -1,0 +1,7 @@
+standalone: true
+section-divs: true
+html-math-method:
+  method: katex
+css:
+  assets/style.css
+

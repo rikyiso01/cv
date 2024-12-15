@@ -1,0 +1,226 @@
+yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
+language: en
+basics:
+  name: "Riccardo Isola"
+  label: "Computer scientist"
+  nationality: Italian #nonstandard
+  gender: male #nonstandard
+  birthYear: 2001
+  image: "photo.jpg"
+  summary: |
+    I've always been a fan of computers and since I was a kid I've showed a particular interest in technology and programming.
+    I like programming, solving complex problems, security, self-hosting and running.
+  website: "https://github.com/rikyiso01"
+  url: "https://github.com/rikyiso01"
+  email: "riky.isola+cv@gmail.com"
+  location:
+    city: "Genova"
+    countryCode: "IT"
+  profiles:
+    - username: "riccardo isola"
+      url: "https://www.linkedin.com/in/rikyiso01"
+      network: "linkedin"
+    - url: "https://github.com/rikyiso01"
+      username: "rikyiso01"
+      network: "github"
+
+certificates: []
+
+education:
+
+  - title: "Diploma superiore"
+    startDate: "2015"
+    endDate: "2020"
+    studyType: "high school"
+    score: "100"
+    area: "tradizionale"
+    institution: "Liceo scientifico statale Luigi Lanfranconi"
+    url: "https://www.lanfranconi.edu.it"
+    location: "Genova"
+
+  - title: "Computer science Bachelor's degree"
+    startDate: "2020-09"
+    endDate: "2023-07"
+    area: "Computer science"
+    studyType: "bachelors"
+    institution: "Università degli studi di genova"
+    credits: 180
+    score: "110 cum laude"
+    thesis: "Cyber Range for university teaching" # non standard
+    # thesis: "Cyber Range per la didattica universitaria" # non standard
+    location: "Genova"
+
+  - title: "Computer science master degree on Software security"
+    startDate: "2023-09"
+    endDate: "2025-12"
+    area: "Computer science - Software security and Engineering - Software Security"
+    studyType: "master"
+    institution: "Università degli studi di genova"
+    location: "Genova"
+    credits: 60
+
+  - title: "International Collegiate Programming Contest"
+    institution: "Southwestern Europe Regional Contest"
+    url: "https://swerc.eu"
+    startDate: "2022-04"
+    endDate: "2024-01"
+    location: Milan, Paris
+    summary: |
+      Participation as a member of the university team in the International Collegiate Programming Contest
+
+  - title: "Cyberchallenge.it"
+    startData: "2022-02"
+    endDate: "2022-06"
+    location: Genova
+    url: "https://cyberchallenge.it"
+    institution: "Cybersecurity National Lab"
+    highlights:
+      - In the 2022 edition I advanced to the national team phase in which the Genoa team ranked third
+    summary: |
+      Italian cybersecurity training program for talented young people from high schools and universities
+      I participated to both the 2018 and 2022 editions
+
+  - title: "Capture the flag competitions"
+    institution: ZenHack
+    startDate: "2022-09"
+    endDate: "2023-11"
+    url: "https://zenhack.it"
+    location: Genova
+    summary: |
+      Participation to different CTF competitions as a member of the university team ZenHack
+
+  - title: "First Lego League"
+    startDate: "2015-09"
+    endDate: "2018-04"
+    institution: First Lego League
+    url: "https://www.firstlegoleague.org"
+    location: Italy, Philippines
+    highlights:
+      - |
+        In the 2015-2016 edition the team ranked third in the Italian national competition, obtaining
+        an invitation to participate in the international competition in the Philippines
+    summary: |
+      Participation in 3 editions of the First Lego League team robotics competition
+
+  - title: "Silicon Valley Study Tour"
+    startDate: "2019-08"
+    endDate: "2019-08"
+    location: San Francisco
+    institution: "La Storia Nel Futuro"
+    url: "https://siliconvalleystudytour.com"
+    summary: |
+      One week experience.
+      Visit to the world's largest companies such as Google Facebook, Pinterest and LinkedIn
+
+  - title: Impresa in azione
+    institution: "Ja Italia"
+    location: Genova
+    startDate: "2020-04"
+    endDate: "2020-06"
+    url: "https://jaitalia.org"
+    summary: |
+      Entrepreneurial Education Program in High School
+      Establishing a Mini-Enterprise for Educational Purposes
+
+  - title: "Leonardo Unige Scholarship Program 2022/2023"
+    institution: "Università degli studi di Genova/Leonardo"
+    startDate: "2023-02"
+    endDate: "2023-05"
+    location: Genova
+    url: "https://cybersecscholarship.csec.it"
+    hightlights:
+      - First place in the final Cyber Defense exercise of the program
+    summary: |
+      The Leonardo-Unige Cybersecurity Scholarship Program is a training program open to all students of the University of Genoa
+      The program offers a training path to provide students with the practical skills needed to defend modern ICT infrastructures from cyber attacks
+
+  - title: "Silicon Valley Study Tour Hackaton #1"
+    institution: "La storia nel futuro"
+    url: "https://www.svst.it/hackathon"
+    location: "Sestri Levante"
+    startDate: "2019-08"
+    endDate: "2019-08"
+
+references: [] #None
+
+skills: []
+
+awards: []
+
+publications: []
+
+volunteer:
+  - title: "Cyberchallenge.it teacher"
+    position: "Teacher/Tutor"
+    organization: "Università degli studi di Genova"
+    url: "https://cyberchallenge.it"
+    startDate: "2023-03"
+    endDate: "2024-06"
+    summary: |
+      Teaching web security, network security, containerization and Attack and Defense at Cyberchallenge.it
+
+  - title: "FLL Coach"
+    position: "Coach"
+    organization: Squadra First Lego League
+    url: "https://www.firstlegoleague.org"
+    startDate: "2018-09"
+    location: Italy, Switzerland
+    endDate: "2020-04"
+    highlights:
+      - In the 2019-2020 edition, the team I followed passed the Swiss national selections.
+    summary: |
+      Volunteering experience as a coach of a team of kids for participation in the 2018-2019 and 2019-2020 editions of the First Lego League team robotics competition.
+
+  - title: "Tutor"
+    position: "Tutor"
+    organization: "Robochamp"
+    location: "Genoa"
+    startDate: "2018-05"
+    endDate: "2018-06"
+    summary: |
+      Helping organizing the robot course Robochamp
+
+work:
+  - name: "Consorzio Ruvaris"
+    website: "https://www.ruvaris.it"
+    location: "Genova"
+    position: "Freelance"
+    startDate: "2021-06-01"
+    endDate: "2021-09-01"
+    summary: |
+      I developed the prototype of a web application for the search and consultation of international standards relating to taps, pipes and accessories
+
+  - name: "Coop & Go"
+    location: "Genova"
+    position: "Teacher"
+    startDate: "2019-07-01"
+    endDate: "2019-07-31"
+    summary: |
+      I taught a Scratch course to elementary school teachers and middle school professors at the I.C. Albaro
+
+  - name: "Estro - Rehabilitation technologies"
+    location: "Genova"
+    position: "Teacher"
+    startDate: "2018-01-01"
+    endDate: "2018-03-31"
+    summary: |
+      I helped organize a Python course "Crea il tuo videogioco"
+      I helped organize a Scratch course "Vola con la programmazione"
+
+  - name: "Università degli studi di genova"
+    website: "https://unige.it"
+    position: "Researcher"
+    startDate: "2023-12-01"
+    endDate: "2024-12-01"
+    summary: |
+      Research at Unige about "Software tools and case study definition for orchestration of components and scenarios in cyber range systems"
+
+languages:
+  - language: "Italian"
+    fluency: "Native speaker"
+  - language: "English"
+    fluency: "B2"
+    certificate: "First Certificate"
+
+interests: [] # todo
+
