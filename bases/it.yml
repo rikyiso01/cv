@@ -1,2 +1,186 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
+yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
 language: it
+basics:
+  name: "Riccardo Isola"
+  label: "Computer scientist"
+  nationality: Italiana #nonstandard
+  gender: maschio #nonstandard
+  birthYear: 2001
+  image: "photo.jpg"
+  summary: |
+    Sono sempre stato interessato all'informatica e sin da piccolo ho mostrato particolare interesse per la tecnologia e la programmazione.
+    Mi piace programmare, risolvere problemi complessi, la sicurezza informatica, il mondo open-source e correre.
+  website: "https://github.com/rikyiso01"
+  url: "https://github.com/rikyiso01"
+  email: "riky.isola+cv@gmail.com"
+  location:
+    city: "Genova"
+    countryCode: "IT"
+  profiles:
+    - username: "riccardo isola"
+      url: "https://www.linkedin.com/in/rikyiso01"
+      network: "linkedin"
+    - url: "https://github.com/rikyiso01"
+      username: "rikyiso01"
+      network: "github"
+
+certificates: []
+
+education:
+  - title: "Diploma superiore"
+    startDate: "2015"
+    endDate: "2020"
+    studyType: "high school"
+    score: "100"
+    area: "tradizionale"
+    institution: "Liceo scientifico statale Luigi Lanfranconi"
+    url: "https://www.lanfranconi.edu.it"
+    location: "Genova"
+
+  - title: "Laurea triennale in informatica"
+    startDate: "2020-09"
+    endDate: "2023-07"
+    area: "Computer science"
+    studyType: "bachelors"
+    institution: "Università degli studi di genova"
+    credits: 180
+    score: "110 cum laude"
+    thesis: "Cyber Range per la didattica universitaria"
+    location: "Genova"
+    highlights:
+      languages: |
+        Acquisito conoscenza, tramite corsi universitari e interesse personale, di molti linguaggi di programmazione tra cui: Python, C#, Java, Rust, Haskell, Kotlin, NodeJs e molti altri
+  - title: "Laurea magistrale in Computer Science specializzata in Cybersecurity"
+    startDate: "2023-09"
+    endDate: "2025-12"
+    area: "Computer science - Software security and Engineering - Software Security"
+    studyType: "master"
+    institution: "Università degli studi di genova"
+    location: "Genova"
+    credits: 90
+    highlights:
+      now: Attualmente scrivendo la tesi di laurea in collaborazione con l'università Francese [Eurecom](https://www.eurecom.fr/en) su "Large Language Models for App Scanning"
+
+  - title: "International Collegiate Programming Contest"
+    institution: "Southwestern Europe Regional Contest"
+    url: "https://swerc.eu"
+    startDate: "2022-04"
+    endDate: "2024-01"
+    location: Milano, Parigi
+    highlights:
+      local: Arrivato primo per 3 anni alla gara locale individuale a Genova
+      team: Arrivato 62°, 40° e 37° alla gara internazionale a squadre nella prima squadra di Genova
+    summary: |
+      Gara di programmazione internazionale divisa in più fasi
+  - title: "Cyberchallenge.it"
+    startData: "2022-02"
+    endDate: "2022-06"
+    location: Genova
+    url: "https://cyberchallenge.it"
+    institution: "Cybersecurity National Lab"
+    highlights:
+      local: Arrivato secondo posto alla gara locale del 2022
+      team: Arrivato terzo posto alla gara nazionale a squadre del 2022
+      participation: Ho partecipato sia all'edizione del 2018 e del 2022
+    summary: |
+      Programma di training di sicurezza informatica per giovani di telento delle scuole superiori e università
+
+  - title: "Competizioni Capture the flag"
+    institution: ZenHack
+    startDate: "2022-09"
+    endDate: "2023-11"
+    url: "https://zenhack.it"
+    location: Genova
+    summary: |
+      Ho partecipato a varie CTF come membro delle squadra universitaria ZenHack
+
+  - title: "Silicon Valley Study Tour"
+    startDate: "2019-08"
+    endDate: "2019-08"
+    location: San Francisco
+    institution: "La Storia Nel Futuro"
+    url: "https://siliconvalleystudytour.com"
+    summary: |
+      Esperienza di una settimana nella Silicon Valley in cui ho visitato le aziende big tech (Google, Facebook, Pinterest, ...)
+
+  - title: "Leonardo Unige Scholarship Program 2022/2023"
+    institution: "Università degli studi di Genova/Leonardo"
+    startDate: "2023-02"
+    endDate: "2023-05"
+    location: Genova
+    url: "https://cybersecscholarship.csec.it"
+    highlights:
+      local: Classificato primo posto alla CTF di selezione
+      exercise: Classificato primo posto all'esercizio di Cyber Defense, tenutosi alla Leonardo Academy in Torre Fiumara
+    summary: |
+      La Leonardo Unige Cybersecurity Scholarship Program è un programma di training aperto a tutti gli studenti dell'università di Genova.
+      Il programma offre un percorso di training sulle skill pratiche necessarie per difendere moderne infrastrutture ICT da attachi informatici
+
+  - title: "Silicon Valley Study Tour Hackaton #1"
+    institution: "La storia nel futuro"
+    url: "https://www.svst.it/hackathon"
+    location: "Sestri Levante"
+    startDate: "2019-08"
+    endDate: "2019-08"
+
+references: [] #None
+
+skills: []
+
+awards: []
+
+publications: []
+
+volunteer:
+  - title: "Docente Cyberchallenge.it"
+    position: "Teacher/Tutor"
+    organization: "Università degli studi di Genova"
+    url: "https://cyberchallenge.it"
+    startDate: "2023-03"
+    endDate: "2025-06"
+    summary: |
+      Docente di web security, network security, containerizzazione e Attacco e Difesa a Cyberchallenge.it
+
+work:
+  - name: "Consorzio Ruvaris"
+    website: "https://www.ruvaris.it"
+    location: "Genova"
+    position: "Freelance"
+    startDate: "2021-06-01"
+    endDate: "2021-09-01"
+    summary: |
+      Sviluppato il prototipo di un applicativo web per la ricerca e la consultazione di leggi internazionali sulla rubinetteria
+
+  - name: "Coop & Go"
+    location: "Genova"
+    position: "Docente"
+    startDate: "2019-07-01"
+    endDate: "2019-07-31"
+    summary: |
+      Insegnante di Scratch ai docenti della scuola elementare e media dell'Istituto Comprensivo Albaro
+
+  - name: "Estro - Rehabilitation technologies"
+    location: "Genova"
+    position: "Docente"
+    startDate: "2018-01-01"
+    endDate: "2018-03-31"
+    highlights:
+      python: Ho insegnato al corso di Python "Crea il tuo videogioco"
+      scratch: Ho insegnato al corso di Scratch "Vola con la programmazione"
+
+  - name: "Università degli studi di genova"
+    website: "https://unige.it"
+    position: "Ricercatore"
+    startDate: "2023-12-01"
+    endDate: "2024-12-01"
+    summary: |
+      Ricerca riguardante "Strumenti software per l'orchestrazione di componenti e scenari in sistemi Cyber Range"
+
+languages:
+  - language: "Italiano"
+    fluency: "Native speaker"
+  - language: "Inglese"
+    fluency: "B2"
+    certificate: "First Certificate"
+
+interests: [] # todo

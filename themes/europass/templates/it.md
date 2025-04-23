@@ -1,198 +1,123 @@
 ---
-title: CV di Riccardo Isola
+title: {{basics.name}}'CV
 ...
 
 ####
 
-{# ![picture]({{basics.image}}) #}
+![picture]({{basics.image}})
 
-##### Riccardo Isola
+##### {{basics.name}}
 
-**Nazionalità:** Italiana
-**Data di nascita:** 16/05/2001
-**Sesso:** Maschile
+**Nationality:** {{basics.nationality.title()}}
+**Year of birth:** {{basics.birthYear}}
+**Gender:** {{basics.gender.title()}}
 
-![icon](assets/icons/phone.png) **Numero di telefono:** [(+39) 3791211797](tel:+39-379-121-1797)
+![icon](assets/icons/email.png) **Email address:** [{{basics.email}}](mailto:{{basics.email}})
 
-![icon](assets/icons/email.png) **Indirizzo e-mail:** [riky.isola@gmail.com](mailto:riky.isola@gmail.com)
+![icon](assets/icons/location.png) **City:** {{basics.location.city}} {{basics.countryCode}}
 
-![icon](assets/icons/linkedin.png) **LinkedIn:** [www.linkedin.com/in/riccardo-isola-682a63184](https://www.linkedin.com/in/riccardo-isola-682a63184)
+{% for account in basics.profiles %}
 
-![icon](assets/icons/github.png) **Github:** [github.com/rikyiso01](https://github.com/rikyiso01)
+![icon](assets/icons/{{account.network}}.png) **{{account.network.title()}}:** [{{account.url.lstrip("https://")}}]({{account.url}})
 
-## Presentazione
+{% endfor %}
 
-Sono sempre stato un appassionato di informatica e sin da piccolo ho mostrato un particolare interesse per la
-tecnologia e la programmazione
+## About me
 
-## Esperienza lavorativa
+{{basics.summary}}
 
-### Sviluppatore applicazione web
+## Work experience
 
-**_Consorzio Ruvaris_** [ 01/06/2021 - 30/08/2021 ]
+{% for job in work | sort(attribute='endDate', reverse=True) %}
 
-Città: Genova  
-Sito web: [ruvaris.it](https://www.ruvaris.it/)
+### {{job.position}}
 
-Ho sviluppato il prototipo di un applicativo web per la ricerca e la consultazione di normative internazionali riferite a rubinetteria, tubazioni e accessori
+**_{{job.name}}_** [ {{job.startDate}} - {{job.endDate}} ]
 
-### Insegnante Scratch
+{% if "location" in job %}City: {{job.location}}{% endif %}
+{% if "country" in job %}Country: {{job.country}}{% endif %}
+{% if "website" in job %}Website: [{{job.website.lstrip("https://")}}]({{job.website}}){% endif %}
 
-**_Coop & Go_** [ 07/2019 - 07/2019 ]
+{{job.summary}}
+{% for highlight in job.highlights %}
+{{highlight}}  
+{% endfor %}
 
-Città: Genova
+{% endfor %}
 
-Ho tenuto un corso di Scratch per conto di Coop & Go a insegnanti delle elementari e professori delle medie all' I.C. Albaro
+## Education and training
 
-### Collaboratore generico
+{% for school in education | sort(attribute='endDate', reverse=True) %}
 
-**_Estro - Rehabilitation technologies_** [ 01/2018 - 03/2018 ]
+### {{school.title}}
 
-Città: Genova
+**_{{school.institution}}_** [ {{school.startDate}} - {{school.endDate}} ]
 
-Ho aiutato ad organizzare un corso di Python "Crea il tuo videogioco"  
-Ho aiutato ad organizzare un corso di Scratch "Vola con la programmazione"
+{% if "location" in school %}City: {{school.location}}{% endif %}
+{% if "country" in school %}Country: {{school.country}}{% endif %}
+{% if "website" in school %}Website: [{{school.url.lstrip("https://")}}]({{school.url}}){% endif %}
+{% if "score" in school %}Final grade: {{school.score}}{% endif %}
+{% if "credits" in school %}Number of credits: {{school.credits}}{% endif %}
+{% if "thesis" in school %}Thesis: {{school.thesis}}{% endif %}
 
-### Tutor Cyberchallenge.it
+{{school.summary}}  
+{% for highlight in school.highlights %}
+{{highlight}}  
+{% endfor %}
 
-## Istruzione e formazione
+{% endfor %}
 
-### Laurea magistrale in computer science
+## Language skills
 
-**_Università degli studi di Genova_** [ 09/2023 - attuale ]
+{% for language in languages %}
+{% if language.fluency=="Native speaker" %}
+Mother tongue(s): **{{language.language}}**
+{% endif %}
+{% endfor %}
 
-Città: Genova  
-Sito web: [unige.it](https://unige.it)
+**Other language(s):**
 
-### Laurea triennale in informatica
+{% for language in languages %}
+{% if language.fluency!="Native speaker" %}
 
-**_Università degli studi di Genova_** [ 09/2020 - 07/2023 ]
+### {{language.language}}
 
-Città: Genova  
-Sito web: [unige.it](https://unige.it)  
-Numero di crediti: 180  
-Voto finale: 110 con lode  
-Tesi: Cyber Range per la didattica universitaria
+**LISTENING** {{language.fluency}} **READING** {{language.fluency}} **WRITING** {{language.fluency}}
 
-### Diploma liceale
+**SPOKEN PRODUCTION** {{language.fluency}} **SPOKEN INTERACTION** {{language.fluency}}
 
-**_Liceo scientifico statale Luigi Lanfranconi_** [ 2015 - 2020 ]
+{% endif %}
+{% endfor %}
 
-Città: Genova  
-Sito web: [lanfranconi.edu.it](https://lanfranconi.edu.it)  
-Voto finale: 100
+{% if driving is defined %}
 
-### Cyberchallenge.it
+## Driving licence
 
-**_CINI Cybersecurity National Lab_** [ 02/2018 - 06/2018 ] [ 02/2022 - 06/2022 ]
+**Driving Licence:** AM
 
-Città: Genova  
-Sito web: [cyberchallenge.it](https://cyberchallenge.it)
+**Driving Licence:** B
 
-Programma italiano di addestramento alla cybersecurity per giovani di talento delle scuole superiori e delle università  
-Ho partecipato sia all'edizione 2018 che 2022  
-Nell'edizione 2022 sono passato alla fase nazionale a squadre nella quale la squadra di Genova si è classificata terza
+{% endif %}
 
-### Leonardo-Unige Cybersecurity Scholarship Program 2022/2023
+## Volunteering
 
-**_Università degli studi di Genova/Leonardo_** [ 02/2023 - 05/2023 ]
+{% for job in volunteer | sort(attribute='endDate', reverse=True) %}
 
-Città: Genova
-Sito web: [cybersecscholarship.csec.it](https://cybersecscholarship.csec.it/)
+### {{job.title}}
 
-La Leonardo-Unige Cybersecurity Scholarship Program è un programma di formazione aperto a tutti gli studenti dell'Università degli studi di Genova  
-Il programma offre un percorso di allenamento per fornire agli studenti le competenze pratiche necessarie a difendere le moderne infrastrutture ICT da attacchi informatici  
-Primo classificato nell'esercizio di Cyber Defense conclusivo del programma
+**_{{job.organization}}_** [ {{job.startDate}} - {{job.endDate}} ]
 
-### Silicon Valley Study Tour
+{% if "location" in job %}City: {{job.location}}  {% endif %}
+{% if "country" in job %}Country: {{job.country}}{% endif %}
+{% if "website" in job %}Website: [{{job.url.lstrip("https://")}}]({{job.url}}){% endif %}
 
-**_La storia nel futuro_** [ 08/2019 - 08/2019 ]
+{{job.summary}}  
+{% for highlight in job.highlights %}
+{{highlight}}  
+{% endfor %}
 
-Città: San Francisco (Stati Uniti)  
-Sito web: [siliconvalleystudytour.com](https://siliconvalleystudytour.com)
-
-Esperienza di una settimana.  
-Visita alle più grandi compagnie del mondo come Google Facebook, Pinterest e LinkedIn
-
-### Impresa in azione
-
-**_Ja Italia_** [ 04/2020 - 06/2020 ]
-
-Città: Genova  
-Sito web: [jaitalia.org](https://jaitalia.org)
-
-Programma di educazione imprenditoriale nella scuola superiore
-Costituzione di mini-impresa a scopo formativo
-
-## Competenze linguistiche
-
-Lingua madre: **italiano**
-
-**Altre lingue:**
-
-### Inglese
-
-**ASCOLTO** B2 **LETTURA** B2 **SCRITTURA** B2
-
-**PRODUZIONE ORALE** B2 **INTERAZIONE ORALE** B2
-
-## Patente di guida
-
-**Patente di guida:** AM
-
-**Patente di guida:** B
-
-## Competenze organizzative
-
-### Coach squadra Fist Lego League
-
-**_Squadra First Lego League_** [ 09/2018 - 04/2019 ] [ 09/2019 - 04/2020 ]
-
-Paese: Italia, Svizzera  
-Sito web: [firstlegoleague.org](https://www.firstlegoleague.org/)
-
-Esperienza di volontariato come coach di una squadra di ragazzi per la partecipazione alle edizioni 2018-2019 e 2019-2020 della gara di robotica a squadre First Lego League  
-Nell'edizione 2019-2020 la squadra che ho seguito ha superato le selezioni nazionali svizzere
-
-## Competenze comunicative e interpersonali
-
-### Membro della squadra di CTF dell'Università degli studi di Genova
-
-**_ZenHack_** [ 09/2022 - attuale ]
-
-Città: Genova  
-Sito web: [zenhack.it](https://zenhack.it/)
-
-Partecipazione a gare di sicurezza informatica
-
-### International Collegiate Programming Contest
-
-**_Southwestern Europe Regional Contest_** [ 04/2022 ] [ 02/2023 ]
-
-Città: Milano  
-Sito web: [swerc.eu](https://swerc.eu/)
-
-Partecipazione come rappresentante dell'università di Genova a 2 edizioni della gara a squadre di programmazione competitiva International Collegiate Programming Contest
-
-### First Lego League
-
-**_First Lego League_** [ 09/2015 - 04/2016 ] [ 09/2016 - 04/2017 ] [ 09/2017 - 04/2018 ]
-
-Paese: Italia, Filippine  
-Sito web: [firstlegoleague.org](https://www.firstlegoleague.org/)
-
-Partecipazione a 3 edizioni della gara di robotica a squadre First Lego League  
-Nell'edizione 2015-2016 la squadra si è classificata terza nella gara nazionale italiana ottenendo l'invito alla partecipazione alla gara internazionale nelle Filippine
-
-### Silicon Valley Study Tour Hackaton #1
-
-**_La storia nel futuro_** [ 08/2019 - 08/2019 ]
-
-Città: Sestri Levante  
-Sito web: [svst.it/hackathon](https://www.svst.it/hackathon/)
+{% endfor %}
 
 ##
 
-Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”.
-
-28/11/2023
+I hereby authorize the use of my personal data in accordance to the GDPR 679/16 - "European regulation on the protection of personal data".

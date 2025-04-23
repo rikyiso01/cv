@@ -161,7 +161,7 @@ volunteer:
 
   - title: "FLL Coach"
     position: "Coach"
-    organization: Squadra First Lego League
+    organization: First Lego League Team
     url: "https://www.firstlegoleague.org"
     startDate: "2018-09"
     location: Italy, Switzerland
@@ -207,6 +207,13 @@ work:
       I helped organize a Python course "Crea il tuo videogioco"
       I helped organize a Scratch course "Vola con la programmazione"
 
+  - name: "Università degli studi di genova"
+    website: "https://unige.it"
+    position: "Research grant"
+    startDate: "2023-12-01"
+    endDate: "2024-12-01"
+    summary: |
+      Research at Unige about "Software tools and case study definition for orchestration of components and scenarios in cyber range systems"
   - name: "Università degli studi di genova"
     website: "https://unige.it"
     position: "Researcher"
